@@ -1,5 +1,5 @@
-class InfosController < ApplicationController
-  before_action :set_info, only: [:show, :update, :destroy]
+class InfosController < OpenReadController
+  before_action :set_info, only: %i[update destroy]
 
   # GET /infos
   def index
@@ -15,7 +15,7 @@ class InfosController < ApplicationController
 
   # POST /infos
   def create
-    @info = Info.new(info_params)
+    @info = current_user.infos.build(info_params)
 
     if @info.save
       render json: @info, status: :created, location: @info
@@ -41,11 +41,11 @@ class InfosController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_info
-      @info = Info.find(params[:id])
+      @info = current_user.infos.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def info_params
-      params.require(:info).permit(:additional_info)
+      params.require(:info).permit(:additional_info, :ingredient_id)
     end
 end
