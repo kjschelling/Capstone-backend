@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class InfosController < OpenReadController
   before_action :set_info, only: %i[update destroy]
 
@@ -39,13 +41,14 @@ class InfosController < OpenReadController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_info
-      @info = current_user.infos.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def info_params
-      params.require(:info).permit(:additional_info, :ingredient_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_info
+    @info = current_user.infos.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def info_params
+    params.require(:info).permit(:additional_info, :ingredient_id)
+  end
 end
