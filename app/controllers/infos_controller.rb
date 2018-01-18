@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class InfosController < OpenReadController
-  before_action :set_info, only: %i[update destroy]
+  before_action :set_info, only: %i[show update destroy]
 
   # GET /infos
   def index
