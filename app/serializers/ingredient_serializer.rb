@@ -3,7 +3,7 @@ class IngredientSerializer < ActiveModel::Serializer
   belongs_to :user
 
   def editable
-   scope == object.user
+    scope == object.user
   end
 
   def infos
