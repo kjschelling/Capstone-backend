@@ -1,12 +1,15 @@
-Back end Capstone
+
 Welcome to my Cosemetic Ingredient Site.
 
-This site allows the user to log in, add an ingredient they want to know more
-about and add links and notes desribing what it's used for, research paper links,
-and any other useful resources.
+This site allows the user to log in, add an ingredient they're interested in collection info about
+It allows users to have a place they can store revelent links & notes about a particular ingredient. 
 
-I created this site to aid me in my research of cosemetic ingredients. It gives me
-a place to store ingredients I'm interested in and can add links and notes to each.
+This site was created to aid me in my dream of developing my own skincare line.  It gave me
+a place to add ingredients I'm interested in and it's resources in one organized space.
+
+==================================
+Development Process
+==================================
 
 User Stories:
 
@@ -22,10 +25,10 @@ Technologies used:
 -CSS and Sass
 -HTML
 
-ERD:
+Entity-Relationship Diagram (ERD):
 https://imgur.com/gallery/oL2F0?s=sms
 
-Depencies:
+Dependencies:
 bundle install
 
 Things I was improve:
@@ -35,13 +38,17 @@ Things I was improve:
 
 Planning:
 
--First I mapped out my ERD and user stories
--Next I set up both backend and frontend and deployed both
--then I started working on my api getting the first resource created and functioning
-before I moved to the front end to set up the resource and get it to show and create
-- next I created the second resource in the backend then moved to the front end to finish
-all the crud functions for all the resources
--then added finishing touches.
+-First, map out ERD and user stories
+
+- set up both backend and frontend and deployed both
+
+- start working the api getting first resource created and functioning.
+ Move to frontend & set up the resource and getting it to show and create.
+
+-  create second resource in the backend then move to the frontend to finish
+all the CRUD functions for all resources.
+
+- add finishing touches.
 
 Frontend repo:https://github.com/kjschelling/kjschelling-capstone
 Backend repo:https://github.com/kjschelling/Capstone-backend
