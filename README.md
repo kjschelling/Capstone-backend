@@ -7,9 +7,7 @@ It allows users to have a place they can store revelent links & notes about a pa
 This site was created to aid me in my dream of developing my own skincare line.  It gave me
 a place to add ingredients I'm interested in and it's resources in one organized space.
 
-==================================
-Development Process
-==================================
+=== Development Process ===
 
 User Stories:
 
@@ -57,4 +55,4 @@ Deployed frontend:https://kjschelling.github.io/kjschelling-capstone/
 Deployed backend:https://kjschelling-capstone.herokuapp.com/
 
 
-Created by KJ Schelling - Full Stack Dev, Skincare Freak, Fashionista
+Created by KJ Schelling - Full Stack Dev - this was my final project for General Assemmbly's Software Engineering Immersive
